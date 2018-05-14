@@ -9,7 +9,7 @@ def initialize():
     global products
     global orders
     global myRedis
-    client = MongoClient("mongodb://BDAdmin:cmps364group1@ds143099.mlab.com:43099/dbdcmps364")
+    client = MongoClient("mongodb://:@ds143099.mlab.com:43099/dbdcmps364")
     r = redis.StrictRedis(host='redis-11994.c14.us-east-1-2.ec2.cloud.redislabs.com',
                           port=11994, password='vdWd20EL4g31oj9CbUTvBLbu9xna9MUL', db=0,
                           charset = "utf-8", decode_responses=True)
